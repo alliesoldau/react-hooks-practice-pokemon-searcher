@@ -25,7 +25,7 @@ function PokemonPage() {
   }
 
   const filteredPokeByName = pokeData
-    .filter((pokemon) => pokemon.name.includes(nameSearch))
+    .filter((pokemon) => pokemon.name.toLowerCase().includes(nameSearch.toLowerCase()))
 
   return (
     <Container>
