@@ -1340,6 +1340,15 @@
         "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
         "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
       }
+    },
+    {
+      "name": "Froggie",
+      "hp": "72",
+      "sprites": {
+        "front": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Breviceps-adspersus-adspersus.jpg/1600px-Breviceps-adspersus-adspersus.jpg",
+        "back": "https://preview.redd.it/iwpb7a77iem71.jpg?width=640&crop=smart&auto=webp&s=af9f8643c281e175e7331578c0b1d886b989732c"
+      },
+      "id": 151
     }
   ]
 }

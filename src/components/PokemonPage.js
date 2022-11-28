@@ -13,7 +13,11 @@ function PokemonPage() {
     fetch("http://localhost:3001/pokemon")
     .then((r) => r.json())
     .then((data) => setPokeData(data))
-  })
+  }, [])
+
+  // function handlePokeFormSubmit(newPoke) {
+  //   setPokeData([...pokeData, newPoke])
+  // }
 
   function handleOnNameChange(event) {
     setNameSearch(event.target.value)
@@ -21,13 +25,15 @@ function PokemonPage() {
   }
 
   const filteredPokeByName = pokeData
-    .filter ((pokemon) => pokemon.name.includes(nameSearch))
+    .filter((pokemon) => pokemon.name.includes(nameSearch))
 
   return (
     <Container>
       <h1>Pokemon Searcher</h1>
       <br />
-      <PokemonForm />
+      <PokemonForm
+        // onPokeFormSubmit={handlePokeFormSubmit}
+      />
       <br />
       <Search 
         handleOnChange={handleOnNameChange}
