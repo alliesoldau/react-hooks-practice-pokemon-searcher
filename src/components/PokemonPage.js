@@ -15,9 +15,9 @@ function PokemonPage() {
     .then((data) => setPokeData(data))
   }, [])
 
-  // function handlePokeFormSubmit(newPoke) {
-  //   setPokeData([...pokeData, newPoke])
-  // }
+  function handlePokeFormSubmit(newPoke) {
+    setPokeData([...pokeData, newPoke])
+  }
 
   function handleOnNameChange(event) {
     setNameSearch(event.target.value)
@@ -32,7 +32,7 @@ function PokemonPage() {
       <h1>Pokemon Searcher</h1>
       <br />
       <PokemonForm
-        // onPokeFormSubmit={handlePokeFormSubmit}
+        onPokeFormSubmit={handlePokeFormSubmit}
       />
       <br />
       <Search 
